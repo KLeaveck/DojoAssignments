@@ -1,0 +1,121 @@
+
+body {
+	position: relative;
+	font-family: arial;
+}
+
+.topbar {
+	height: 100px;
+	background: url(../images/logo.png) left top no-repeat, black url(../images/heading.jpg) center top repeat-x;
+	background-size: contain;
+}
+
+div.topbar h1 {
+	display: block;
+	width: 500px;
+	top: 60%;
+	margin-left: auto;
+	position: relative;
+	font: bold 1.7em arial, sans-serif;
+}
+
+.buttonbar {
+	background: gray url(../images/button.jpg) repeat-x;
+	background-size: contain;
+	height: 50px;
+	position: relative;
+}
+
+ul.buttonbar li {
+	display: inline-block;
+	position: relative;
+	padding: 15px 5px;
+	margin: 0 4px;
+	top: 1px;
+	/*border-left: 2px solid white;
+	border-right: 2px solid white;*/
+	background: gray url(../images/button.png);
+	background-size: cover;
+}
+
+ul.buttonbar li:hover {
+	opacity: .5;
+}	
+
+.container {
+	height: 700px;
+	background: black;
+	background: -webkit-linear-gradient(left, black,rgb(55, 55, 55) 40%, black);
+}
+
+#main-pic {
+	border: 4px solid white;
+	margin: 15px;
+	left: 20px;
+	height: 280px;
+	position: relative;
+}
+
+.about {
+	display: inline-block;
+	background: rgb(110, 110, 110);
+	background: -webkit-linear-gradient(left, rgb(110, 110, 110),rgb(55, 55, 55));
+	color: white;
+	font-family: arial;
+	width: 600px;
+	height: 288px;
+	vertical-align: top;
+	margin: 15px;
+}
+
+.yellow-bar {
+	background: rgb(252, 209, 93);
+	background: -webkit-linear-gradient(top, rgb(251,209, 91), rgb(254, 202, 64) 20%);	
+	color: black;
+	font: bold .9em arial;
+	padding: 5px 10px;
+}
+
+.about p {
+	font-size: 14px;
+}
+
+.about h3, p {
+	margin: 20px;
+}
+
+.break {
+	font-size: .75em;
+	color: rgb(152, 150, 99);
+	text-indent: 40px;
+}
+
+.modules {
+	display: inline-block;
+	background: rgb(255, 244, 222);
+	background: -webkit-linear-gradient(bottom, rgb(255, 244, 222) 25%, rgb(253, 253, 253));
+	width: 22%;
+	margin: 10px 15px;
+}
+
+.modules img {
+	width: 100%;
+}
+
+.modules p {
+	font-size: .8em;
+	margin-bottom: 40px;
+}
+
+.read-more {
+	background: orange;
+	background: url(../images/readmore.png) no-repeat;
+	background-size: contain;
+	height: 35px;
+	width: 130px;
+	position: relative;
+	left: 100px;
+	bottom: 20px;
+	font: bold .8em arial;
+	text-align: center;
+	padding-top: 8px;

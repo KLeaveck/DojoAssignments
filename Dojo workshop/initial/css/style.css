@@ -1,0 +1,81 @@
+/* * {
+	border-color: red;
+	border: 1px solid red;
+}*/
+
+body {
+	background-color: hsl(30, 50%, 80%);
+}
+
+h1 {
+	font-size: 100px;
+	font-family: 'Bungee Shade', cursive;
+	text-align: center;
+	padding: 0 0;
+	outline: 1px dotted purple;
+}
+
+#chicken-soup {
+	color: blue;
+}
+
+.about-me {
+	background-color: silver;
+	width: 80%;
+	margin-left: 5%;
+}
+
+.about-me p {
+	width: 70%;
+	position: relative;
+	margin: auto;
+}
+
+.input-fields {
+	outline: 1px dotted purple;
+	float: left;
+	margin: 0 10px;
+}
+
+.labels {
+	outline: 1px dotted pink;
+	float: left;
+}
+
+.button-bar li{
+	display: inline-block;
+	margin: 0 30px;
+	outline: 1px dotted red;
+	padding: 10px;
+}
+
+.button-bar {
+	outline: 1px dotted blue;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	right: 50px;
+}
+
+#funny-chicken {
+	position: relative;
+	margin: 40px auto;
+	outline: 10px dotted blue;
+	clear: left;
+	display: block;
+}
+
+.email-form {
+	outline: 1px dotted green;
+}
+
+.email-form label {
+	display: block;
+	margin: 10px 0;
+}
+
+.email-form input, textarea{
+	outline: 1px dotted red;
+	position: relative;
+	display: block;
+	margin: 10px 0;

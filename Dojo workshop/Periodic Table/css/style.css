@@ -1,0 +1,116 @@
+* {
+	font-family: arial;
+}
+
+#topbar {
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+#topbar li {
+	display: inline-block;
+	margin: 0 19.5px;
+	color: red;
+	font-size: .9em;
+}
+
+#spacer {
+	padding-left: 9px;
+}
+
+#group {
+	width: 15px;
+	padding-right: 30px;
+}
+
+#row {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	bottom: 20px;
+}
+
+#row li {
+	list-style: none;
+	margin: 50px 0;
+	color: red;
+}
+
+#table {
+	display: inline-block;
+}
+
+.element {
+	border: 1px solid black;
+	width: 50px;
+	height: 55px;
+	display: inline-block;
+	padding: 4px 1px 2px 1px;
+	text-align: center;
+	margin-bottom: 4px;
+}
+
+.element nav {
+	font-size: .5em;
+}
+
+.element h3 {
+	margin: 3px;
+}
+
+#hidden {
+	visibility: hidden;
+}
+
+.blue {
+	max-width: 120px;
+	display: inline-block;
+}
+
+.blue div {
+	background: rgb(97, 145, 239);
+}
+
+.red {
+	max-width: 600px;
+	display: inline-block;
+	color: purple;
+}
+
+.red div {
+	background: rgb(253, 154, 152);
+}
+
+.orange {
+	max-width: 350px;
+	display: inline-block;
+	position: relative;
+	right: 20px;
+}
+
+.orange div {
+	background: rgb(254, 203, 0);
+}
+
+#bottomheading {
+	height: 110px;
+	margin: 0;
+	display: inline-block;
+	list-style: none;
+	padding: 5px 76px 0 40px;
+}
+
+#bottomheading li {
+	color: red;
+	margin-bottom: 50px;
+}
+
+.green {
+	width: 850px;
+	display: inline-block;
+}
+
+.green div {
+	background: rgb(31, 202, 33);
+}
