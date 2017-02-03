@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <!-- <script src= 'jQuery.js'></script> -->
+    <style type="text/css">
+      .green {
+        background: green;
+      }
+      .massive {
+        font-size: 30px;
+      }
+    </style>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $("#link").click(function(){
+        $("#AddClass").toggle();
+      });
+
+      // $("#link").click(function(){
+      //   $("#AddClass").show()
+      // });
+
+      $("#Slidetoggle").click(function(){
+        $("p").slideToggle();
+      });
+
+      // $("#Append").click(function(){
+      //   $("#nifty").fadeOut("fast");
+      // });
+
+      // $("#Append").click(function(){
+      //   $("#nifty").addClass("green");
+      // });
+
+      // $("#Append").click(function(){
+      //   $("h1").before("<h2 class='green'>I'm before</h2>");
+      // });
+
+      $("#Append").click(function(){
+        $("#html").text("<h6>Changed</h6>");
+      });
+
+      $("#colorchange").click(function(){
+        $(".divs").attr("class", "massive");
+      });
+
+    });
+    </script>
+    <title>My jQuery Assignment</title>
+  </head>
+  <body>
+
+    <div class="divs">
+      <h1 id="AddClass">AddClass</h1>
+      <a id="link" href="#">AddClass</a>
+      <p>Click the button to add class 'red' to this paragraph</p>
+    </div>
+
+    <div class="divs">
+      <h1>Slide toggle</h1>
+      <a id="Slidetoggle" href="#">Slidetoggle</a>
+      <p>Click the button to slidetoggle a hidden image</p>
+    </div>
+
+    <div class="divs">
+      <h1>Append</h1>
+      <a id="Append" href="#">Append</a> <span>How is it going guys?</span>
+      <p id="nifty">Click the button to append a new paragraph</p>
+    </div>
+
+    <h1 id="html">Hello</h1>
+
+    <button id="colorchange" type="button" name="button">test</button>
+
+<p>Type something cool then click out</p>
+    <input type="text" value="I Don't Want to do Val">
+
+  </body>
+</html>

@@ -1,0 +1,215 @@
+/**{
+  outline: 1px dotted red;
+}*/
+
+body {
+  margin: 0;
+  color: white;
+  font-family: sans-serif;
+}
+
+.container {
+    background: rgb(20, 82, 116); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgb(20, 82, 116), rgb(35, 120,169)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgb(20, 82, 116), rgb(35, 120,169)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgb(20, 82, 116), rgb(35, 120,169)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgb(20, 82, 116), rgb(35, 120,169)); /* Standard syntax */
+    height: 900px;
+    width: 100%;
+}
+
+img {
+  padding: 15px 0 15px 20px;
+  width: 350px;
+}
+
+a.size {
+  color: rgb(208, 172, 7);
+}
+
+#controls {
+  display: inline-block;
+  vertical-align: top;
+  width: 540px;
+}
+
+#textsize {
+  margin-left: auto;
+  width: 200px;
+  padding: 5px;
+}
+
+#search {
+  /*height: 65px;*/
+  width: 250px;
+  padding: 15px;
+  margin-left: auto;
+  background: rgb(68, 68, 68);
+  border-radius: 10px;
+  box-shadow: 3px 3px 1.5px rgba(0, 0, 0, .5);
+}
+
+form {
+  margin: auto;
+  width: 200px;
+}
+
+input[type=text] {
+  padding: 9px;
+  text-align: center;
+  color: gray;
+  border: 1px solid gray;
+}
+
+input[type=submit] {
+  padding: 10px;
+  color: white;
+  background: rgb(20, 82, 116);
+  border-radius: 4px;
+}
+
+#buttonbar {
+  width: 780px;
+  margin: 0 auto 10px auto;
+  background: rgb(27, 121, 171);
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 3px 3px 1.5px rgba(0, 0, 0, .5);
+}
+
+ul#buttonlinks {
+    width: 704px;
+    padding: 0;
+    margin: auto;
+}
+
+ul#buttonlinks li {
+  display: inline-block;
+  font-size: 1.3em;
+  margin: 0 12px;
+}
+
+#uppercontent {
+  width: 700px;
+  margin: auto;
+}
+
+ul#left {
+  display: inline-block;
+  list-style-type: none;
+  text-align: center;
+}
+
+i {
+  color: rgb(208, 172, 7);
+  margin: 4px;
+}
+
+div#right {
+  display: inline-block;
+  vertical-align: top;
+  width: 450px;
+  text-align: center;
+  margin-left: 50px;
+}
+
+#right p {
+  font-size: .9em;
+}
+
+ul#left li {
+  padding: 3px 0;
+}
+
+h2 {
+  color: rgb(208, 172, 7);
+  font-style: italic;
+  font-weight: normal;
+  margin: 5px;
+  font-size: 1.3em;
+}
+
+#right div {
+  margin-top: 10px;
+}
+
+#lowercontent {
+  background: white;
+  margin-top: 20px;
+}
+
+#whitecontainer {
+  margin: auto;
+  width: 810px;
+}
+
+#bluelines {
+  width: 800px;
+  margin: auto;
+}
+
+.blueline {
+  height: 3px;
+  width: 370px;
+  background: rgb(27, 121, 171);
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.whitecontent {
+  display: inline-block;
+  vertical-align: top;
+  width: 350px;
+  text-align: center;
+  color: black;
+  margin: 0 20px;
+
+}
+
+h3 {
+  font-weight: normal;
+  margin: 0;
+}
+
+.whitecontent p {
+  font-size: .9em;
+}
+
+.whitecontent ul li a {
+  font-size: .9em;
+  color: rgb(162, 196, 225);
+}
+
+.whitecontent ul {
+  list-style-type: square;
+  list-style:
+}
+
+.whitecontent a {
+  font-size: .7em;
+  color: rgb(162, 196, 225);
+  text-decoration:none;
+}
+
+#footer {
+  width: 550px;
+  margin: auto;
+}
+
+.footerbutton {
+  display: inline-block;
+  margin: 20px 5px 5px 5px;
+  text-decoration:none;
+}
+
+.footerbutton a {
+  color: rgb(162, 196, 225);
+  text-decoration:none;
+}
+
+.copyright {
+  font-size: .7em;
+  width: 25%;
+  margin: 15px auto;
+  color: rgb(162, 196, 225);
+}

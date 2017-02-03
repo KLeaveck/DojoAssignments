@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+
+    <script type="text/javascript">
+
+      $(document).ready(function(){
+
+        var count = 0;
+
+        $("form").submit(function(){
+          var first = $(".first").val();
+          var last = $(".last").val();
+          var description = $(".description").val();
+          count ++;
+          $("#data_output").prepend("<div id='"+count+"'><h2 class='name'>"+first+" "+last+"<h2><h5 class='name'>Click for Description</h5><h4>"+description+"</h4></div>");
+          $("#"+count+" h4").hide();
+          return false;
+        })
+
+        $(document).on("click", "#data_output div", function(){
+            $(this).find(".name").toggle();
+            $(this).find("h4").toggle();
+        });
+
+        $(".first").click(function(){
+          $(this).val("");
+        })
+
+        $(".last").click(function(){
+          $(this).val("");
+        })
+
+        $(".description").click(function(){
+          $(this).val("");
+        })
+
+      });
+
+    </script>
+
+    <style>
+
+      * {
+        font-family: sans-serif;
+      }
+
+      body {
+        background: #d8fffe;
+        padding: 10px;
+      }
+
+      h1 {
+        color: rgba(255,251,239,1);
+        -webkit-text-stroke: 1px black;
+        text-shadow: 2px 2px hsla(0, 0%, 50%, 0.8);
+
+      }
+
+      #data_input {
+        display: inline-block;
+        text-align: right;
+        width: 250px;
+      }
+
+
+
+
+      #data_output {
+        display: inline-block;
+        text-align: center;
+        width: 400px;
+        vertical-align: top;
+      }
+
+      #data_input div {
+        margin-top: 15px;
+      }
+
+      textarea {
+        width: 250px;
+        height: 100px;
+        margin-top: 5px;
+      }
+
+      input {
+        margin-top: 5px;
+      }
+
+      #data_output div {
+        width: 250px;
+        height: 150px;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: 10px 0 0 auto;
+        box-shadow: 1.5px 1.5px 1.5px hsla(0, 0%, 50%, 0.8);
+        background: rgb(255,251,239); /* Old browsers */
+        background: -moz-radial-gradient(center, ellipse cover,  rgba(255,251,239,1) 0%, rgba(255,245,216,1) 100%); /* FF3.6-15 */
+        background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,251,239,1) 0%,rgba(255,245,216,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: radial-gradient(ellipse at center,  rgba(255,251,239,1) 0%,rgba(255,245,216,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffbef', endColorstr='#fff5d8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+      }
+
+      h2{
+        margin-top: 30px;
+      }
+
+    </style>
+    <title>Contact Card</title>
+
+  </head>
+  <body>
+
+    <div id="data_input">
+      <h1>Create a User:</h1>
+      <form action="index.html" method="post">
+        <div>First Name: <input type="text" class="first" value="First Name"></div>
+        <div>Last Name: <input type="text" class="last" value="Last Name"></div>
+        <div>Description: <textarea class="description">Enter Description</textarea></div>
+        <input id="submitButton" type="submit" name="Enter" value="Add User">
+      </form>
+    </div>
+
+    <div id="data_output">
+      <!-- <div> -->
+        <!-- <h2 class="name">Noah Neumark</h2><h5 class="name">Click for Description!</h5> -->
+        <!-- <h4>This is a description of the information that is entered into the create a user contact sheet.</h4>
+      </div> -->
+
+    </div>
+  </body>
+</html>
